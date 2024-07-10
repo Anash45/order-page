@@ -42,7 +42,7 @@ body{
     width: 150px;
     height: 150px;
     object-fit: contain;
-    animation: rotating 3s linear infinite;
+    /* animation: rotating 3s linear infinite; */
 }
 /* .loader{
     height: 150px;
