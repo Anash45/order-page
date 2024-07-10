@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    padding: 100px 50px;
+    background-color: #46A67E;
+}
+.cards-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 60px 40px;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+}
+
+/* .card:nth-child(2){
+    transform: scale(1.04);
+} */
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    animation: rotating 3s linear infinite;
+}
+/* .loader{
+    height: 150px;
+    animation: rotating 3s linear infinite;
+} */
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.card-heading{
+    font-size: 28px;
+    font-weight: 600;
+    color: #2F463D;
+    margin: 40px 0 30px;
+}
+
+.card-description{
+    font-size: 16px;
+    color: #828282;
+    margin-bottom: 80px;
+}
+
+.card-description-2{
+    margin-bottom: 30px;
+}
+.card-btn{
+    display: block;
+    padding: 16px 20px;
+    text-decoration: none;
+    background-color: #BDBDBD;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(167, 167, 167, 0.2);
+    margin-bottom: 30px;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #E0E0E0;
+    border-radius: 90px;
+}
+
+.dot.active, .card-btn.active{
+    background-color: #67BD99;
+}
+
+.close{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-details{
+    color: #2F463D;
+    text-align: left;
+}
+
+.item-change{
+    color: #467A66;
+    font-weight: 700;
+    font-size: 14px;
+}
